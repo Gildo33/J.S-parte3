@@ -1,0 +1,27 @@
+body {
+    background: rgb(9, 4, 22) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+input,button {
+    background:white;
+    color: rgb(12, 21, 29);
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+button{
+    background: red;
+    
+}
+
+p{
+    color: white;
+}
+
+

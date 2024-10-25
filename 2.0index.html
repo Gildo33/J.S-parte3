@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./2.1style.css">
+    <title>projeto for</title>
+</head>
+
+<body>
+    <input placeholder="Digite seu contato">
+    <p>Contatos</p>
+    <button onclick="search()">procurar contato</button>
+    
+</body>
+
+<script>
+
+    let input = document.querySelector("input") //mapear
+    let p = document.querySelector("p") //mapear
+   
+    
+    
+
+    let contacts = [
+    
+    { name: "Gildo", number: "(11) 98950-6584"},
+    { name: "kamilly",number: "(11 98814-6762 "},
+    { name: "leila", number: "(11) 94927-9821"},
+    { name: "Daniele", number: "(11) 99654-0849"},
+    { name: "Girleide", number: "(11) 93227-4555"},
+
+    ]
+
+function search() {
+    let i = 0;
+    let falso= false;
+    
+
+//for(let i =0; i <contacts.length;i++)
+//while (i<contacts.length)
+
+for (const contact of contacts)
+
+
+  {
+    
+    
+    
+
+if(input.value.toLowerCase() === contact.name.toLowerCase()) {
+p.innerHTML = "Contato encontrado,nome: "  
++ contact.name +  " Tel: " + contact.number
+    
+break //Assim que é encontrado,a função do break é finalizar.
+
+}
+
+else {
+    p.innerHTML = "contato não encontrado"
+}
+    
+    
+} 
+
+
+
+    }
+
+        
+//toLowerCase: Essa funçao permite encontrar em letra maiuscula e minuscula 
+
+    
+</script>
+
+</html>
+
